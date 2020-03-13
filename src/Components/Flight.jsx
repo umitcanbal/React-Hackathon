@@ -15,12 +15,9 @@ export default class Flight extends React.Component {
         
         <li>To: {item.cityTo}</li>,
         
-        
       </ul>
     )
   }
-
-
 }
 
 

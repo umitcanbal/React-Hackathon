@@ -6,8 +6,8 @@ const searchFlights = async (origin, destination, direct) => {
   const whenTo = DateTime.local().plus({ days: 2}).toFormat("dd/MM/yyyy");
   const query = new URLSearchParams({
     partner: "picky",
-    flyFrom: "PRG",
-    to: "IST",
+    flyFrom: origin,
+    to: destination,
     dateFrom: whenFrom,
     dateTo: whenTo,
     v:3
