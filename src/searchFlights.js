@@ -28,16 +28,9 @@ const searchFlights = async (origin, destination, direct) => {
   
 }
 
-
-
-
 export default searchFlights
 
-//Burada yaptıklarımız çok kritik
-// url'e şekil verdik bi şekilde, iki tane class kullandık URLSearchParams ve URL adında. Nasıl şekil vereceğimizi nerden biliyoruz? nerden bileyim ben flyFrom diye bi şey kullanmam gerektiğini ve bunu query'ye yerleştirmem gerektiğini?
-//CEVAP: başlangıçta zaten örnek API vardı, ona benzetmeye çalıştım, örnek API şöyle bi şeydi (direkt API documentationda verilmişti bu) : "https://api.skypicker.com/flights?flyFrom=PRG&to=LGW&dateFrom=18/11/2020&dateTo=12/12/2020&partner=picky&v=3"
 
-//Sonra ne yapıyoruz? Bu şekillendirdiğimiz url'i fetch ediyoruz, bu (response) bize sadece connection veriyo, datayı vermiyo. Dataya ulaşmak için bu response'u json() methoduyla muamele etmemiz lazım. Ondan sonra ham data var elimde, ama bu datanın içinde de kullanmak istemediğim birsürü şey var tabii ki. Bu data ne? Bu bi object. Bu object'in içindeki prop/key'lerden biri de "data". Ve benim aradığım şeyler bu key'e atanmış. Yani bana lazım olan şey data.data (data object'in içindeki data key'ine tekabül eden veriler).
 
 
 
